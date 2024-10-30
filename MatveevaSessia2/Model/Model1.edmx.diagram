@@ -19,6 +19,9 @@
         <AssociationConnector Association="MatveevaSessia2Model.FK_Purchases_Products" ManuallyRouted="false" />
         <AssociationConnector Association="MatveevaSessia2Model.FK_Sales_Products" ManuallyRouted="false" />
         <AssociationConnector Association="MatveevaSessia2Model.FK_Purchases_Suppliers" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Gender" Width="1.5" PointX="3.5" PointY="16.75" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_User_Gender" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Pharmaces_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

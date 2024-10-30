@@ -33,5 +33,6 @@ namespace MatveevaSessia2.Model
         public virtual DbSet<Sale> Sales { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Gender> Genders { get; set; }
     }
 }
