@@ -115,7 +115,28 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Views\Windows\CAPTCHAWindow.xaml.cs">
+      <DependentUpon>CAPTCHAWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\SignUpWindow.xaml.cs">
+      <DependentUpon>SignUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\UserrWindow.xaml.cs">
+      <DependentUpon>UserrWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\Windows\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\CAPTCHAWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\SignUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\UserrWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

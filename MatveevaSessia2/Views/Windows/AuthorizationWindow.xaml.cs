@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MatveevaSessia2.AppData;
+using MatveevaSessia2.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,41 @@ namespace MatveevaSessia2.Views.Windows
     /// </summary>
     public partial class AuthorizationWindow : Window
     {
+        private static MatveevaSessia2Entities _context = App.GetContext();
         public AuthorizationWindow()
         {
+            List<string> roles = new List<string> {"Директор"};
             InitializeComponent();
+            RoleCmb.ItemsSource = roles;
+        }
+
+        private void EntryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (AuthoriseHelper.Authorise(LoginTb.Text, PassTb.Password, RoleCmb.SelectedItem as string))
+            {
+                CAPTCHAWindow cAPTCHAWindow = new CAPTCHAWindow();
+                if (cAPTCHAWindow.ShowDialog() == true)
+                {
+                    if (RoleCmb.SelectedIndex == 0)
+                    {
+                        UserrWindow userrWindow = new UserrWindow(AuthoriseHelper.selectedUser);
+                        userrWindow.Show();
+                        Close();
+                    }
+                }
+            }
+        }
+
+        private void SignUpHl_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpWindow signUpWindow = new SignUpWindow();
+            signUpWindow.Show();
+            Close();
+        }
+
+        private void EnterHl_Click(object sender, RoutedEventArgs e)
+        {
+            // ---.
         }
     }
 }
