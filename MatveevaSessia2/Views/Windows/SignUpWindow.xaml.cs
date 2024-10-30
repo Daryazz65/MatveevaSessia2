@@ -23,5 +23,12 @@ namespace MatveevaSessia2.Views.Windows
         {
             InitializeComponent();
         }
+
+        private void NazadBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AuthorizationWindow authorizationWindow = new AuthorizationWindow();
+            authorizationWindow.Show();
+            Close();
+        }
     }
 }

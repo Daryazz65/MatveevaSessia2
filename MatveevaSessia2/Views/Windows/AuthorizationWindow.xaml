@@ -38,8 +38,6 @@
                     Click="EntryBtn_Click"  HorizontalAlignment="Left"/>
             <TextBlock FontSize="15"><Hyperlink Name="SignUpHl" 
                     Click="SignUpHl_Click">Зарегистрироваться</Hyperlink></TextBlock>
-            <TextBlock FontSize="15"><Hyperlink Name="EnterHl"
-                    Click="EnterHl_Click">Войти без авторизации</Hyperlink></TextBlock>
         </StackPanel>
     </Grid>
 </Window>
