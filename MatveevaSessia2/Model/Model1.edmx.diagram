@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bb41f2971a214804851f525dc15d9022" Name="Diagram1">
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Inventory" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Pharmace" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Product" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Purchase" Width="1.5" PointX="6" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Report" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Sale" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Supplier" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.User" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Inventory_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Pharmaces_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Pharmaces_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Purchases_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Sales_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_Purchases_Suppliers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
