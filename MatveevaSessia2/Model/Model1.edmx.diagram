@@ -22,6 +22,8 @@
         <EntityTypeShape EntityType="MatveevaSessia2Model.Gender" Width="1.5" PointX="3.5" PointY="16.75" />
         <AssociationConnector Association="MatveevaSessia2Model.FK_User_Gender" />
         <AssociationConnector Association="MatveevaSessia2Model.FK_Pharmaces_User" />
+        <EntityTypeShape EntityType="MatveevaSessia2Model.Role" Width="1.5" PointX="3.5" PointY="19.875" />
+        <AssociationConnector Association="MatveevaSessia2Model.FK_User_Role" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
