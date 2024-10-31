@@ -95,7 +95,7 @@
                                   VerticalContentAlignment="Center"/>
                         <Border Height="5"/>
                         <StackPanel Orientation="Horizontal">
-                            <Button Name="OkBtn" Content="Ok" Click="OkBtn_Click"/>
+                            <!--<Button Name="OkBtn" Content="Ok" Click="OkBtn_Click"/>-->
                             <Border Width="20"/>
                             <Button Name="CancelBtn" Content="Отмена" 
                                     Click="CancelBtn_Click"/>
