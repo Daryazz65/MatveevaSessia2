@@ -31,7 +31,7 @@ namespace MatveevaSessia2.AppData
                     List<User> users = _context.Users.ToList();
                     foreach (User org in users)
                     {
-                        if (login == org.Id.ToString() && password == org.Password)
+                        if (login == org.Login && password == org.Password)
                         {
                             selectedUser = org;
                             return true;
