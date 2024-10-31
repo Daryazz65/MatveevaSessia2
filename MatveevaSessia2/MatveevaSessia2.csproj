@@ -124,6 +124,9 @@
     <Compile Include="Views\Windows\CAPTCHAWindow.xaml.cs">
       <DependentUpon>CAPTCHAWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\JournalWindow.xaml.cs">
+      <DependentUpon>JournalWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\ProfileWindow.xaml.cs">
       <DependentUpon>ProfileWindow.xaml</DependentUpon>
     </Compile>
@@ -166,6 +169,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\CAPTCHAWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\JournalWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

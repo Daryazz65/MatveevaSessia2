@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MatveevaSessia2.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,13 @@ namespace MatveevaSessia2.Views.Windows
     /// </summary>
     public partial class UserrWindow : Window
     {
+        private static MatveevaSessia2Entities _context = App.GetContext();
+        private User _selectedUser;
         public UserrWindow(Model.User selectedUser)
         {
             InitializeComponent();
+            _selectedUser = selectedUser;
+
         }
 
         private void OneHl_Click(object sender, RoutedEventArgs e)
@@ -33,7 +38,7 @@ namespace MatveevaSessia2.Views.Windows
 
         private void TwoHl_Click(object sender, RoutedEventArgs e)
         {
-            ProfileWindow profileWindow = new ProfileWindow();
+            ProfileWindow profileWindow = new ProfileWindow(_selectedUser);
             profileWindow.Show();
             Close();
         }
