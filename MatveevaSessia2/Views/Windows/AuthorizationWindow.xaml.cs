@@ -24,7 +24,7 @@ namespace MatveevaSessia2.Views.Windows
         private static MatveevaSessia2Entities _context = App.GetContext();
         public AuthorizationWindow()
         {
-            List<string> roles = new List<string> {"Директор"};
+            List<string> roles = new List<string> {"Директор", "Сисадмин"};
             InitializeComponent();
             RoleCmb.ItemsSource = roles;
         }

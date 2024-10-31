@@ -23,5 +23,19 @@ namespace MatveevaSessia2.Views.Windows
         {
             InitializeComponent();
         }
+
+        private void OneHl_Click(object sender, RoutedEventArgs e)
+        {
+            JournalWindow journalWindow = new JournalWindow();
+            journalWindow.Show();
+            Close();
+        }
+
+        private void TwoHl_Click(object sender, RoutedEventArgs e)
+        {
+            ProfileWindow profileWindow = new ProfileWindow();
+            profileWindow.Show();
+            Close();
+        }
     }
 }
