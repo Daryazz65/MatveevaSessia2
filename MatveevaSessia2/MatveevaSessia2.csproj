@@ -99,6 +99,9 @@
     <Compile Include="Model\Report.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Role.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Sale.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
