@@ -91,7 +91,7 @@
                         <CheckBox Name="IsVisibleCb" 
                                   Checked="IsVisibleCb_Checked" 
                                   Unchecked="IsVisibleCb_Unchecked"  
-                                  Content="Видимый пароль" 
+                                  <!--Content="Видимый пароль"--> 
                                   VerticalContentAlignment="Center"/>
                         <Border Height="5"/>
                         <StackPanel Orientation="Horizontal">
