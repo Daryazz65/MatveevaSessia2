@@ -100,7 +100,7 @@
                             <Button Name="CancelBtn" Content="Отмена" 
                                     Click="CancelBtn_Click"/>
                         </StackPanel>
-                    <!--</StackPanel>-->
+                    </StackPanel>
                 </Grid>
             </StackPanel>
         </Grid>
