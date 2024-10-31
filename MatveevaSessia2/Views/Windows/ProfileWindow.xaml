@@ -103,6 +103,6 @@
                     </StackPanel>
                 </Grid>
             </StackPanel>
-        </Grid>
+        <!--</Grid>-->
     </Grid>
 </Window>
